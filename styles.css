@@ -1,0 +1,135 @@
+.maindiv{
+    background-color: black;
+}
+.cols{
+    display: grid;
+    justify-content: center;
+}
+
+.hg{
+    height: auto;
+    width:120px;
+    transition: width 0.5s;
+    font-family: Comic Sans MS;
+}
+.hg:hover{
+    width: 300px;
+}
+
+.cb{
+    display: flex;
+    justify-content: center;
+}
+.hg img{
+    height: 380px;
+    width:330px;
+    border-radius: 10px;
+    
+}
+.aTag:link {
+    text-decoration: none;
+}
+.aTag:hover {
+    color: rgb(255, 0, 0);
+}
+
+.aTag{
+    color: rgb(255, 255, 255);
+}
+.subdiv{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 15px;
+}
+.header{
+    color: transparent;
+    display: flex;
+    align-items: center;
+}
+.title{
+    position: relative;
+    left: -30px;
+    top:2px;
+    background-color:transparent;
+    transition: 0.8s;
+    font-size: 50px;
+    font-family: Comic Sans MS;
+}
+.header:hover{
+    color: rgb(255, 0, 0);
+}
+.headerimg{
+    height:80px;
+    width:120px;
+    margin-left: 15px;
+}
+.input-group{
+    display: flex;
+    justify-content:right;
+    padding: 5px;
+}
+.fa-sharp{
+    color:rgb(255, 0, 0);
+}
+input.searchbar {
+    width:300px;
+    border: 2px solid red;
+    background-color: transparent;
+    color: rgb(255, 0, 0);
+    outline: none;
+    border-left: none;
+}
+.dropdown{
+    background-color: transparent;
+    color: rgb(255, 0, 0);
+    border: 2px solid red;
+    border-right: none;
+    border-radius: 3px;
+    left:3px;
+    outline: none;
+}
+select.dropdown option{
+	background-color:black;
+}
+::placeholder {
+    color: rgb(255, 0, 0);
+}
+
+  
+
+@media only screen and (max-width: 600px){
+    input.searchbar {
+        outline: none;
+        border: 2px solid red;
+        background-color: transparent;
+        width:120px;
+        margin-left: 5px;
+        align-items: end;
+        border-left: none;
+    }
+    .input-group{
+        display: flex;
+        justify-content:end;
+    }
+    .headerimg{
+        height:50px;
+        width:80px;
+    }
+    .dropdown{
+        width:20px;
+    }
+    .subdiv{
+       margin-left: -50px;
+    }
+    .title{
+    position: relative;
+    left: -20px;
+    top:10px;
+    background-color:transparent;
+    transition: 0.8s;
+    font-size: 35px;
+    font-family: Comic Sans MS;
+    }
+  }
+

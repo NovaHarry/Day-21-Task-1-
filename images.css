@@ -1,0 +1,35 @@
+.maindiv{
+    background-color: rgb(0, 0, 0);
+}
+.sub1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.LoadMore{
+    background-color: black;
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+    border:1px solid red;
+    border-radius: 5px;
+    padding: 5px;
+    outline:none;
+}
+.cols{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: stretch;
+}
+.rows{
+    display: grid;
+    row-gap: 2px;
+}
+
+@media only screen and (max-width: 550px){
+    .cols{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: stretch;
+    }
+  }
